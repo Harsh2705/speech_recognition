@@ -10,10 +10,10 @@ with sr.Microphone() as source:
 		text=r.recognize_google(audio)
 		print("you said :",format(text))
 		with open('file.txt',mode ='w') as file: 
-			file.write("Recognized text:") 
+			file.write("WELCOME:") 
 			file.write("\n") 
 			file.write(text) 
-			print("complete")
+			print("task is complete")
 
 
 	except:
